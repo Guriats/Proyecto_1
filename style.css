@@ -1,0 +1,58 @@
+/* PALETTE */
+:root {
+  --white: #ffffff;
+  --black: #131313;
+  --grey: var #999999;
+  font-family: Helvetica, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* NAVBAR 1 */
+
+.rrss > ul > li{
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: right;
+    padding: 10px 10px;
+}
+
+.rrss img{
+    height: 20px;
+    width: auto;
+    padding: 0 10px;
+}
+
+/* NAVBAR 2 */
+
+.menu{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   
+}
+
+.dayseeker{
+
+}
