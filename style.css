@@ -147,8 +147,7 @@ h2 {
   font-size: 30px;
 }
 
-.articulos > ul{
-  
+.articulos > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
@@ -157,14 +156,63 @@ h2 {
 .articulos > ul > li {
   display: grid;
   grid-template-rows: auto auto auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
-  }
-
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
 
 .articulos img {
   height: 300px;
   width: auto;
   object-fit: cover;
+}
+
+/*----------------VIDEO-----------------*/
+
+button {
+  border: 4px solid var(--black);
+  padding: 5px 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 10px;
+}
+
+button::before {
+  content: "↦";
+}
+
+.posicionamientoBoton {
+  position: relative;
+  left: 50%;
+  bottom: 300px;
+}
+
+.video {
+  padding: 40px 0;
+}
+
+.posicionamientoTexto {
+  justify-content: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: black;
+  position: relative;
+  left: 35%;
+  bottom: 300px;
+}
+
+/*------------------FOOTER-----------------*/
+
+footer {
+  height: 50vh;
+  background-image: url(./assets/images/cosmos.webp);
+  background-size: cover;
+  background-position: top;
+}
+
+footer > ul {
+  display: grid;
+  gap: 20px;
 }
