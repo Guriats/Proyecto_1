@@ -1,7 +1,7 @@
 /* PALETTE */
 :root {
   --white: #ffffff;
-  --black: #131313;
+  --black: #1d1d1d;
   --grey: var #999999;
   font-family: Helvetica, sans-serif;
 }
@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-/* GLOBAL STYLES */
+/* ------------- GLOBAL STYLES ----------------B*/
 body {
   background-color: var(--black);
   color: var(--white);
@@ -28,31 +28,96 @@ a {
   color: var(--white);
 }
 
-/* NAVBAR 1 */
+/* --------------NAVBAR RRSS---------------- */
 
-.rrss > ul > li{
-    height: 40px;
-    width: auto;
-    display: flex;
-    justify-content: right;
-    padding: 10px 10px;
+.rrss {
+  padding: 0 80px;
 }
 
-.rrss img{
-    height: 20px;
-    width: auto;
-    padding: 0 10px;
+.rrss > ul > li {
+  height: 5vh;
+  width: auto;
+  display: flex;
+  justify-content: right;
+  padding: 10px ;
 }
 
-/* NAVBAR 2 */
-
-.menu{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-   
+.rrss img {
+  height: 20px;
+  width: auto;
+  padding: 0 10px;
 }
 
-.dayseeker{
+/* ----------------------NAVBAR 2------------------- */
 
+.menutotal {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  height: 8vh;
+  width: auto;
+  padding: 0 80px;
 }
+
+.lupa img {
+  height: 20px;
+  width: auto;
+ margin: 20px;
+  filter: invert();
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.dayseeker {
+  font-size: 40px;
+  padding: 30px;
+  margin: auto;
+}
+
+.cesta {
+  display: flex;
+  justify-content: right;
+  
+}
+
+.cesta img {
+  height: 20px;
+  width: auto;
+ margin: 20px;
+  filter: invert();
+}
+
+
+
+/*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
+
+.darkSun {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  overflow: hidden;
+}
+
+.darkSun img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* la imagen se ajusta sin deformarse */
+}
+
+
+/*---------------------ANIMACIÓN------------------*/
+
+
+
+
+/* ------------- MAIN ------------- */
