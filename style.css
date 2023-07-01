@@ -1,8 +1,8 @@
 /* PALETTE */
 :root {
   --white: #ffffff;
-  --black: #1d1d1d;
-  --grey: var #999999;
+  --black: #070707;
+  --grey: #999999;
   font-family: Helvetica, sans-serif;
 }
 
@@ -39,7 +39,7 @@ a {
   width: auto;
   display: flex;
   justify-content: right;
-  padding: 10px ;
+  padding: 10px;
 }
 
 .rrss img {
@@ -49,6 +49,7 @@ a {
 }
 
 /* ----------------------NAVBAR 2------------------- */
+/*preguntar*/
 
 .menutotal {
   display: grid;
@@ -58,10 +59,14 @@ a {
   padding: 0 80px;
 }
 
+.menutotal:hover {
+  text-decoration: underline; /*preguntar*/
+}
+
 .lupa img {
   height: 20px;
   width: auto;
- margin: 20px;
+  margin: 20px;
   filter: invert();
 }
 
@@ -75,6 +80,10 @@ a {
   padding: 0 10px;
 }
 
+.dayseeker:hover {
+  text-decoration: underline; /*preguntar*/
+}
+
 .dayseeker {
   font-size: 40px;
   padding: 30px;
@@ -84,17 +93,14 @@ a {
 .cesta {
   display: flex;
   justify-content: right;
-  
 }
 
 .cesta img {
   height: 20px;
   width: auto;
- margin: 20px;
+  margin: 20px;
   filter: invert();
 }
-
-
 
 /*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
 
@@ -114,10 +120,51 @@ a {
   object-fit: cover; /* la imagen se ajusta sin deformarse */
 }
 
-
 /*---------------------ANIMACIÓN------------------*/
 
+/*---------porque no se queda entro de la caja al inicio?------------------*/
 
+@keyframes encoger {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
+.darkSun {
+  animation: encoger 1s forwards;
+}
 
 /* ------------- MAIN ------------- */
+
+h2 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  font-size: 30px;
+}
+
+.articulos > ul{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.articulos > ul > li {
+  display: grid;
+  grid-template-rows: auto auto auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+
+.articulos img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
