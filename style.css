@@ -71,6 +71,7 @@ a {
 }
 
 .menu {
+ 
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -206,13 +207,51 @@ button::before {
 /*------------------FOOTER-----------------*/
 
 footer {
-  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
   background-image: url(./assets/images/cosmos.webp);
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  color: var(--white);
 }
 
-footer > ul {
+.cajaFooter {
   display: grid;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  color: var(--white);
+  align-self: self-start;
 }
+
+.columnaUno,
+.columnaDos {
+  display: flex;
+  align-items: center;
+}
+
+.columnaDos ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.rrss li {  /*rrssFooter*/
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
