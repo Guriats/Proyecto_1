@@ -185,22 +185,23 @@ button::before {
 
 .posicionamientoBoton {
   position: relative;
-  left: 50%;
+text-align: center;
   bottom: 300px;
 }
 
-.video {
-  padding: 40px 0;
+.video{
+  overflow: hidden;
+  height: 500px;
 }
 
 .posicionamientoTexto {
-  justify-content: center;
+  text-align: center;
   font-size: 40px;
   text-transform: uppercase;
   padding: 0 10px;
   color: black;
   position: relative;
-  left: 35%;
+  
   bottom: 300px;
 }
 
@@ -211,15 +212,18 @@ footer {
   grid-template-columns: 1fr;
   background-image: url(./assets/images/cosmos.webp);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   color: var(--white);
+  padding-top: 15px;
+  padding-bottom: 40px;
+  border: 2px solid red;
 }
 
 .cajaFooter {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 0 400px;
   color: var(--white);
   align-self: self-start;
 }
@@ -230,14 +234,33 @@ footer {
   align-items: center;
 }
 
-.columnaDos ul {
-  display: flex;
-  flex-direction: column;
+.columnaUno{
+  padding-bottom: 70px;
 }
 
-.rrss li {  /*rrssFooter*/
+.columnaDos {
   display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.columnaDos > ul >li{
+  padding: 5px;
+}
+
+
+.rrssFooter {
+  filter: invert(100%);
+  display: flex;
+  flex-direction: row;
+  
   gap: 10px;
+}
+
+.rrssFooter img{
+  height: 20px;
+  width:  20px;
 }
 
 
