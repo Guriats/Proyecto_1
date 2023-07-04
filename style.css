@@ -52,14 +52,20 @@ a {
   grid-template-columns: 100px 1fr 100px;
   justify-content: center;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   width: auto;
   padding: 0 80px;
+
+}
+
+.lupa{
+  margin: 0px 0px 0px 50px;
 }
 
 .menu > ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 15px;
   text-transform: uppercase;
@@ -280,12 +286,13 @@ footer {
   text-decoration: underline;
   font-size: 14px;
 }
-.sobre::after {
-  text-decoration: none;
 
-  padding: 20px;
-  content: "✉";
+.mail{
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
+
 
 .columnaDos > ul > li {
   padding: 5px;
