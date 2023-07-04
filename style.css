@@ -103,9 +103,7 @@ a {
   text-decoration: underline;
 }
 
-.video:hover {
-  text-decoration: underline;
-}
+
 
 .lupa img {
   height: 20px;
@@ -206,7 +204,6 @@ button {
   background-color: transparent;
   text-transform: uppercase;
   font-weight: 900;
-
   margin: 10px;
 }
 
@@ -311,6 +308,10 @@ footer {
 .rrssFooter img {
   height: 20px;
   width: 20px;
+}
+
+.correo{   
+  font-size: 36px;
 }
 
 .power{
