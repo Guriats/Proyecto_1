@@ -58,10 +58,9 @@ a {
   width: auto;
   text-transform: uppercase;
   padding: 0 80px;
-
 }
 
-.lupa{
+.lupa {
   margin: 0px 0px 0px 50px;
 }
 
@@ -73,11 +72,9 @@ a {
   gap: 20px;
 }
 
-.menuCentral{
+.menuCentral {
   display: flex;
   justify-content: center;
-
-
 }
 
 .menuDerecho {
@@ -88,8 +85,6 @@ a {
   font-size: 15px;
   gap: 20px;
 }
-
-
 
 .dayseeker {
   font-size: 40px;
@@ -128,8 +123,6 @@ a {
   text-decoration: underline;
 }
 
-
-
 .lupa img {
   height: 25px;
   width: auto;
@@ -141,7 +134,7 @@ a {
   justify-content: right;
 }
 
-.cesta img{
+.cesta img {
   height: 30px;
   width: auto;
   margin: 20px;
@@ -154,69 +147,59 @@ a {
   filter: invert();
 }
 
-
-
-  /* Ocultamos por defecto el menú hamburguesa*/
-  label {
-    display: none;
-    padding: 40px;
-  }
-  
-  /* Ocultamos también el input para hacer click en el menú hamburgesa sin que se vea el checkbox*/
-  input {
-    display: none;
-  }
-  
-  /* Cuando tenemos como máximo 600px de ancho en pantalla, hacemos que aparezca el menú hamburguesa y ocultamos el menú de links*/
-  
-    @media screen and (max-width: 1000px) {
-      label {
-        display: flex;
-        font-size: 30px;
-      }
-  
-     .lupa{
-      display: none;
-     }
-
-     .menuIzquierdo{
-      display: none;
-     }
-
-
-     .menuDerecho{
-      display: none;
-     }
-
-     .cesta{
-      display: none;
-     }
-     
-.menutotal{
-  display: flex;
-  justify-content: center;
+/* Ocultamos por defecto el menú hamburguesa*/
+label {
+  display: none;
+  padding: 40px;
 }
 
-     
+/* Ocultamos también el input para hacer click en el menú hamburgesa sin que se vea el checkbox*/
+input {
+  display: none;
+}
 
-      /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
-    #hamburger:checked ~ .menutotal{
-      position: absolute;
-      top: 80px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    }
+/* Cuando tenemos como máximo 600px de ancho en pantalla, hacemos que aparezca el menú hamburguesa y ocultamos el menú de links*/
 
-
+@media screen and (max-width: 1000px) {
+  label {
+    display: flex;
+    font-size: 30px;
   }
 
+  .lupa {
+    display: none;
+  }
 
-  
+  .menuIzquierdo {
+    display: none;
+  }
+
+  .menuDerecho {
+    display: none;
+  }
+
+  .cesta {
+    display: none;
+  }
+
+  .menutotal {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
+  #hamburger:checked ~ .menutotal {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
 
@@ -237,7 +220,6 @@ a {
 }
 
 /*---------------------ANIMACIÓN------------------*/
-
 
 @keyframes encoger {
   from {
@@ -373,17 +355,16 @@ footer {
   font-size: 14px;
 }
 
-.sobre{
+.sobre {
   text-decoration: underline;
   font-size: 14px;
 }
 
-.mail{
+.mail {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
 
 .columnaDos > ul > li {
   padding: 5px;
@@ -404,11 +385,11 @@ footer {
   width: 20px;
 }
 
-.correo{   
+.correo {
   font-size: 36px;
 }
 
-.power{
+.power {
   display: flex;
   justify-content: center;
   padding: 20px;
