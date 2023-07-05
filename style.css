@@ -49,11 +49,13 @@ a {
 
 .menutotal {
   display: grid;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 10vh;
   width: auto;
+  text-transform: uppercase;
   padding: 0 80px;
 
 }
@@ -62,19 +64,35 @@ a {
   margin: 0px 0px 0px 50px;
 }
 
-.menu > ul {
+.menuIzquierdo > ul {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  font-size: 15px;
+  gap: 20px;
+}
+
+.menuCentral{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+
+
+}
+
+.menuDerecho {
+  display: flex;
+  justify-content: left;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 15px;
-  text-transform: uppercase;
   gap: 20px;
 }
 
 .dayseeker {
   font-size: 40px;
   padding: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
   margin: auto;
 }
 
@@ -103,6 +121,10 @@ a {
   text-decoration: underline;
 }
 
+.video:hover {
+  text-decoration: underline;
+}
+
 
 
 .lupa img {
@@ -123,10 +145,10 @@ a {
   filter: invert();
 }
 
-
   /* Ocultamos por defecto el menú hamburguesa*/
   label {
     display: none;
+    padding: 40px;
   }
   
   /* Ocultamos también el input para hacer click en el menú hamburgesa sin que se vea el checkbox*/
@@ -145,12 +167,22 @@ a {
       .lupa{
         display: none;
       }
-      .menu{
+      .menuIzquierdo{
         display: none;
       }
+
+      .menuCentral{
+        display: none;
+      }
+
+      .menuDerecho{
+        display: none;
+      }
+
       .cesta{
         display: none;
       }
+
       /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
     #hamburger:checked ~ ul {
       position: absolute;
@@ -162,6 +194,7 @@ a {
       align-items: center;
     }
   }
+
   
 
 /*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
@@ -259,7 +292,7 @@ button::before {
   bottom: 270px;
 }
 
-.video {
+.videoClip {
   overflow: hidden;
   height: 500px;
 }
@@ -302,7 +335,7 @@ footer {
 
 .columnaUno {
   font-size: 14px;
-  padding-bottom: 180px;
+  padding-bottom: 170px;
 }
 
 .columnaDos {
