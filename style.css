@@ -89,6 +89,8 @@ a {
   gap: 20px;
 }
 
+
+
 .dayseeker {
   font-size: 40px;
   padding: 30px;
@@ -181,7 +183,7 @@ a {
       }
 
       .menuCentral{
-        display: none;
+      margin-left: 50px;
       }
 
       .menuDerecho{
@@ -342,9 +344,9 @@ footer {
   align-self: self-start;
 }
 
-.columnaUno {
+.columnaUno > ul > li {
   font-size: 14px;
-  padding-bottom: 170px;
+  padding-top: 25px;
 }
 
 .columnaDos {
