@@ -31,7 +31,7 @@ a {
 /* --------------NAVBAR RRSS---------------- */
 
 .rrss > ul {
-  height: 5vh;
+  height: 3vh;
   width: auto;
   display: flex;
   justify-content: right;
@@ -42,6 +42,7 @@ a {
   height: 20px;
   width: auto;
   padding: 0 10px;
+  filter: invert();
 }
 
 /* ----------------------NAVBAR 2------------------- */
