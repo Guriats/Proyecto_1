@@ -179,19 +179,22 @@ a {
       display: none;
      }
 
+     .menuIzquierdo{
+      display: none;
+     }
+
+
+     .menuDerecho{
+      display: none;
+     }
+
      .cesta{
       display: none;
      }
      
-.dayseeker{
-  display: none;
-}
-     
 
-      .menutotal{
-        display: flex;
-        flex-direction: column;
-      }
+
+     
 
       /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
     #hamburger:checked ~ .menutotal{
@@ -202,7 +205,11 @@ a {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      display: flex;
+      flex-direction: column;
     }
+
+
   }
 
 
