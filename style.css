@@ -175,27 +175,26 @@ a {
         font-size: 30px;
       }
   
-      .lupa{
-        display: none;
-      }
-      .menuIzquierdo{
-        display: none;
-      }
+     .lupa{
+      display: none;
+     }
 
-      .menuCentral{
-      margin-left: 50px;
-      }
+     .cesta{
+      display: none;
+     }
+     
+.dayseeker{
+  display: none;
+}
+     
 
-      .menuDerecho{
-        display: none;
-      }
-
-      .cesta{
-        display: none;
+      .menutotal{
+        display: flex;
+        flex-direction: column;
       }
 
       /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
-    #hamburger:checked ~ ul {
+    #hamburger:checked ~ .menutotal{
       position: absolute;
       top: 80px;
       width: 100%;
@@ -205,6 +204,7 @@ a {
       align-items: center;
     }
   }
+
 
   
 
@@ -228,7 +228,6 @@ a {
 
 /*---------------------ANIMACIÓN------------------*/
 
-/*---------porque no se queda entro de la caja al inicio?------------------*/
 
 @keyframes encoger {
   from {
